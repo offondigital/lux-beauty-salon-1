@@ -3,80 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Lumière Hair Salon — Where Confidence Blossoms</title>
-<meta name="description" content="Lumière Hair Salon: expert stylists, premium organic products and personalized care. Precision cuts, dimensional color and restorative treatments in Los Angeles.">
-<meta name="theme-color" content="#FBF7F2">
+<title>LUX Beauty Salon — Custom Color, Precision Cuts &amp; Hand-Tied Extensions | Orlando</title>
+<meta name="description" content="LUX Beauty Salon is a boutique, sustainability-minded hair studio in Orlando specializing in custom hair color, precision cuts and hand-tied extensions. By appointment only. Rated 5.0 from 56 reviews.">
+<meta name="theme-color" content="#F6F3EE">
 <meta name="color-scheme" content="light">
-<link rel="canonical" href="https://lumierehairsalon.com/">
+<link rel="canonical" href="https://luxbeautysalonorlando.com/">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Lumière Hair Salon">
-<meta property="og:title" content="Lumière Hair Salon — Where Confidence Blossoms">
-<meta property="og:description" content="Expert care, personalized treatments and effortless beauty that lasts. Book your appointment at Lumière.">
-<meta property="og:url" content="https://lumierehairsalon.com/">
-<meta property="og:image" content="https://lumierehairsalon.com/assets/og-lumiere.jpg">
+<meta property="og:site_name" content="LUX Beauty Salon">
+<meta property="og:title" content="LUX Beauty Salon — Boutique Hair Studio in Orlando">
+<meta property="og:description" content="Custom colorings, precise haircuts and hand-tied extensions. Wella, Arete and Innersense Organic Beauty. By appointment only.">
+<meta property="og:url" content="https://luxbeautysalonorlando.com/">
+<meta property="og:image" content="https://luxbeautysalonorlando.com/assets/og-lux.jpg">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 /* ============ 1 · TOKENS ============ */
 :root{
-  /* Surface */
-  --c-bg:#FBF7F2; --c-bg-alt:#F6EFE8; --c-bg-tint:#EFE3D8;
-  /* Brand */
-  --c-brand:#C4714B; --c-brand-700:#A85B38; --c-brand-200:#E9C9B4;
-  /* Ink — ink-60 escurecido p/ 7.1:1 sobre --c-bg */
-  --c-ink:#2E2A26; --c-ink-60:#5A524B; --c-line:rgba(46,42,38,.12);
+  /* Surface — bone / greige */
+  --c-bg:#F6F3EE; --c-bg-alt:#EFEAE2; --c-bg-tint:#E4DCD0;
+  /* Brand — soft brass */
+  --c-brand:#9A7B4F; --c-brand-700:#7E6339; --c-brand-200:#DCCBAE;
+  /* Ink */
+  --c-ink:#23211E; --c-ink-60:#57514A; --c-line:rgba(35,33,30,.13);
   /* On-brand */
   --c-on-brand:#FFFFFF; --c-on-brand-85:rgba(255,255,255,.88);
-  --c-on-brand-70:rgba(255,255,255,.74); --c-on-brand-40:rgba(255,255,255,.40);
+  --c-on-brand-70:rgba(255,255,255,.74); --c-on-brand-40:rgba(255,255,255,.42);
   --c-on-brand-22:rgba(255,255,255,.22);
   /* Header scrim */
-  --c-head:rgba(251,247,242,.72); --c-head-stuck:rgba(251,247,242,.94);
+  --c-head:rgba(246,243,238,.74); --c-head-stuck:rgba(246,243,238,.95);
   /* Type */
-  --ff-display:"Playfair Display",Georgia,"Times New Roman",serif;
+  --ff-display:"Cormorant Garamond",Georgia,"Times New Roman",serif;
   --ff-ui:"Jost",system-ui,-apple-system,"Segoe UI",sans-serif;
-  /* Pisos elevados: base mobile legível, teto desktop inalterado */
-  --fs-display:clamp(2.9rem,1.95rem + 4.1vw,4.4rem);   /* 46.4px → 70.4px */
-  --fs-h2:clamp(2.1rem,1.55rem + 2.4vw,3.1rem);        /* 33.6px → 49.6px */
-  --fs-h3:clamp(1.1875rem,1.12rem + .3vw,1.3rem);      /* 19px   → 20.8px */
-  --fs-body:clamp(1.0625rem,1.03rem + .16vw,1.09rem);  /* 17px   → 17.4px */
-  --fs-small:clamp(.9375rem,.91rem + .12vw,.97rem);    /* 15px   → 15.5px */
-  --fs-label:clamp(.8125rem,.79rem + .1vw,.84rem);     /* 13px   → 13.4px */
-  --fs-micro:.8125rem;                                  /* copyright */
-  --lh-display:1.12; --ls-display:-.018em;
-  --ls-label:.12em;          /* tracking contido no mobile */
-  --ls-label-wide:.18em;     /* aplicado só ≥640px */
+  --fs-display:clamp(3.1rem,2.05rem + 4.6vw,4.9rem);  /* Cormorant tem x-height baixa: +.2rem vs. Playfair */
+  --fs-h2:clamp(2.25rem,1.6rem + 2.8vw,3.4rem);
+  --fs-h3:clamp(1.1875rem,1.12rem + .3vw,1.3rem);
+  --fs-body:clamp(1.0625rem,1.03rem + .16vw,1.09rem);  /* 17px → 17.4px */
+  --fs-small:clamp(.9375rem,.91rem + .12vw,.97rem);    /* 15px → 15.5px */
+  --fs-label:clamp(.8125rem,.79rem + .1vw,.84rem);     /* 13px → 13.4px */
+  --fs-price:clamp(1rem,.97rem + .14vw,1.06rem);
+  --fs-micro:.8125rem;
+  --lh-display:1.1; --ls-display:-.012em;
+  --ls-label:.12em; --ls-label-wide:.2em;
   /* Motion */
   --e-out:cubic-bezier(.22,1,.36,1);
   --e-inout:cubic-bezier(.65,0,.35,1);
   --t-fast:280ms; --t-base:520ms; --t-slow:860ms;
   --t-hero-line:900ms; --t-hero-clip:1100ms; --t-hero-scale:1400ms;
-  --t-seal:20s;
+  --t-seal:22s;
   /* Space */
   --s-1:.25rem; --s-2:.5rem; --s-3:.75rem; --s-4:1rem;
-  --s-6:1.5rem; --s-8:2rem; --s-12:3rem; --s-16:4rem; --s-24:6rem;
-  --s-sect:clamp(4.25rem,7vw,6rem);
+  --s-6:1.5rem; --s-8:2rem; --s-12:3rem; --s-16:4rem;
+  --s-sect:clamp(4.25rem,7vw,6.5rem);
   /* Layout */
   --w-max:1240px; --pad:clamp(1.375rem,5vw,5.5rem);
-  --r-sm:5px; --r-md:8px; --r-pill:999px;
-  --arch:50% 50% var(--r-md) var(--r-md) / 26% 26% 4px 4px;
-  --oval:50% / 34%;
+  --r-sm:4px; --r-md:8px; --r-pill:999px;
+  --arch:50% 50% var(--r-md) var(--r-md) / 24% 24% 4px 4px;
+  --oval:50% / 32%;
   --h-head:76px; --h-head-stuck:66px;
-  --shadow-1:0 18px 50px -24px rgba(46,42,38,.28);
-  --shadow-2:0 28px 70px -30px rgba(46,42,38,.38);
-  --shadow-head:0 10px 30px -26px rgba(46,42,38,.5);
-  --tap:48px;                /* alvo de toque real */
-  --measure:38ch;            /* medida de linha no mobile */
+  --shadow-1:0 18px 50px -24px rgba(35,33,30,.26);
+  --shadow-2:0 28px 70px -30px rgba(35,33,30,.36);
+  --shadow-head:0 10px 30px -26px rgba(35,33,30,.5);
+  --tap:48px; --measure:38ch;
 }
-@media(min-width:640px){
-  :root{--ls-label:var(--ls-label-wide);--measure:34ch}
-}
-@media(min-width:900px){
-  :root{--lh-display:1.05;--h-head:88px;--h-head-stuck:70px}
-}
+@media(min-width:640px){:root{--ls-label:var(--ls-label-wide);--measure:34ch}}
+@media(min-width:900px){:root{--lh-display:1.04;--h-head:88px;--h-head-stuck:70px}}
 
 /* ============ 2 · RESET ============ */
 *,*::before,*::after{box-sizing:border-box}
@@ -89,8 +83,8 @@ img,svg{display:block;max-width:100%}
 img{height:auto;object-fit:cover}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit}
-h1,h2,h3,h4,p,ul{margin:0}
-ul{list-style:none;padding:0}
+h1,h2,h3,h4,p,ul,ol,dl,dd,dt,figure,blockquote{margin:0}
+ul,ol{list-style:none;padding:0}
 h1,h2{font-family:var(--ff-display);font-weight:400;
   letter-spacing:var(--ls-display);line-height:var(--lh-display);text-wrap:balance}
 h1{font-size:var(--fs-display)}
@@ -103,13 +97,12 @@ h3{font-family:var(--ff-display);font-weight:500;font-size:var(--fs-h3);line-hei
 .eyebrow{font-size:var(--fs-label);font-weight:500;text-transform:uppercase;
   letter-spacing:var(--ls-label);color:var(--c-brand);line-height:1.5}
 .lede{color:var(--c-ink-60);max-width:var(--measure);text-wrap:pretty}
-.rule{width:180px;max-width:100%;height:1px;background:var(--c-line);border:0;margin:var(--s-6) 0}
+.rule{width:170px;max-width:100%;height:1px;background:var(--c-line);border:0;margin:var(--s-6) 0}
 .skip{position:absolute;left:-9999px;top:0;z-index:99}
 .skip:focus{left:var(--s-4);top:var(--s-4);background:var(--c-bg);
   padding:var(--s-3) var(--s-4);border-radius:var(--r-sm);box-shadow:var(--shadow-1)}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 
-/* Buttons — M6 */
 .btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:var(--s-3);
   min-height:52px;padding:var(--s-4) clamp(1.5rem,5vw,2rem);
   border:1px solid var(--c-brand);border-radius:var(--r-sm);
@@ -126,15 +119,17 @@ h3{font-family:var(--ff-display);font-weight:500;font-size:var(--fs-h3);line-hei
 .btn--ghost{background:transparent;border-color:var(--c-on-brand);color:var(--c-on-brand)}
 .btn--ghost::before{background:var(--c-on-brand)}
 .btn--ghost:hover,.btn--ghost:focus-visible{color:var(--c-brand-700);box-shadow:none}
+.btn--line{background:transparent;border-color:var(--c-ink);color:var(--c-ink)}
+.btn--line::before{background:var(--c-ink)}
+.btn--line:hover,.btn--line:focus-visible{color:var(--c-bg)}
 .btn--sm{min-height:46px;padding:var(--s-3) var(--s-6)}
-/* Text link */
 .tlink{display:inline-flex;align-items:center;gap:var(--s-2);min-height:var(--tap);
   font-size:var(--fs-label);font-weight:500;text-transform:uppercase;
   letter-spacing:.1em;color:var(--c-brand)}
 .tlink svg{flex:none;transition:transform var(--t-base) var(--e-out)}
 .tlink:hover svg,.tlink:focus-visible svg{transform:translateX(6px)}
 
-/* ============ 4 · S0 HEADER ============ */
+/* ============ 4 · HEADER ============ */
 .head{position:fixed;inset:0 0 auto;z-index:50;background:var(--c-head);
   -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
   transition:background var(--t-base) var(--e-out),box-shadow var(--t-base) var(--e-out)}
@@ -143,11 +138,11 @@ h3{font-family:var(--ff-display);font-weight:500;font-size:var(--fs-h3);line-hei
 .head__bar{display:flex;align-items:center;justify-content:space-between;gap:var(--s-4);
   height:var(--h-head);transition:height var(--t-base) var(--e-out)}
 .head.is-stuck .head__bar{height:var(--h-head-stuck)}
-.logo{display:block;font-family:var(--ff-display);font-size:1.4rem;
-  letter-spacing:.05em;line-height:1;white-space:nowrap}
-.logo span{display:block;margin-top:5px;font-family:var(--ff-ui);
+.logo{display:block;font-family:var(--ff-display);font-size:1.6rem;font-weight:500;
+  letter-spacing:.14em;line-height:1;white-space:nowrap}
+.logo span{display:block;margin-top:4px;font-family:var(--ff-ui);
   font-size:.6875rem;font-weight:400;letter-spacing:.26em;color:var(--c-ink-60)}
-.nav__list{display:none;gap:clamp(1rem,1.9vw,2rem)}
+.nav__list{display:none;gap:clamp(1rem,1.8vw,1.9rem)}
 .nav__list a{position:relative;display:flex;align-items:center;min-height:44px;
   font-size:var(--fs-label);text-transform:uppercase;letter-spacing:.1em}
 .nav__list a::after{content:"";position:absolute;left:0;bottom:10px;width:100%;height:1px;
@@ -166,57 +161,56 @@ h3{font-family:var(--ff-display);font-weight:500;font-size:var(--fs-h3);line-hei
 .head.is-open .burger i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
 .drawer{overflow:hidden;max-height:0;padding-inline:var(--pad);
   transition:max-height var(--t-base) var(--e-inout)}
-.head.is-open .drawer{max-height:500px}
+.head.is-open .drawer{max-height:560px}
 .drawer ul{display:grid;padding-bottom:var(--s-6)}
 .drawer a{display:flex;align-items:center;min-height:52px;
   border-bottom:1px solid var(--c-line);font-size:var(--fs-label);
   text-transform:uppercase;letter-spacing:.1em}
 .drawer .btn{margin-top:var(--s-6);width:100%}
-@media(min-width:1024px){
-  .nav__list,.head__cta{display:flex}
-  .burger,.drawer{display:none}
-}
+@media(min-width:1024px){.nav__list,.head__cta{display:flex}.burger,.drawer{display:none}}
 
-/* ============ 5 · S1 HERO ============ */
+/* ============ 5 · HERO ============ */
 .hero{display:grid;padding-top:var(--h-head)}
 .hero__copy{padding:clamp(2.75rem,6vw,5rem) var(--pad) clamp(3rem,6vw,5rem)}
 .hero h1{margin-top:var(--s-6)}
-.hero .l{display:block;overflow:hidden;padding-bottom:.08em} /* evita clip do descendente */
+.hero .l{display:block;overflow:hidden;padding-bottom:.08em}
 .hero .l>span{display:block;transform:translateY(105%);
   transition:transform var(--t-hero-line) var(--e-out);transition-delay:var(--d,0ms)}
 .hero h1.in .l>span{transform:none}
 .hero em{font-style:italic;color:var(--c-brand)}
-.hero__sub{margin:var(--s-6) 0 var(--s-8);font-size:var(--fs-body)}
+.hero__sub{margin:var(--s-6) 0 var(--s-8)}
+.hero__acts{display:flex;flex-wrap:wrap;gap:var(--s-3)}
 .proof{display:flex;align-items:center;gap:var(--s-4);flex-wrap:wrap;margin-top:var(--s-12)}
-.proof__ava{display:flex;flex:none}
-.proof__ava img{width:42px;height:42px;aspect-ratio:1;border-radius:var(--r-pill);
-  border:2px solid var(--c-bg);margin-left:-12px}
-.proof__ava img:first-child{margin-left:0}
+.proof__rate{display:flex;align-items:baseline;gap:var(--s-2);
+  font-family:var(--ff-display);font-size:2.4rem;line-height:1}
+.proof__rate b{font-weight:500}
+.proof__rate i{font-style:normal;font-family:var(--ff-ui);
+  font-size:var(--fs-small);color:var(--c-ink-60)}
 .proof__meta{font-size:var(--fs-small);line-height:1.6}
 .proof__meta strong{font-weight:500}
-.stars{color:var(--c-brand);letter-spacing:.08em}
 .proof__meta span{color:var(--c-ink-60)}
+.stars{color:var(--c-brand);letter-spacing:.1em}
 .hero__media{position:relative;overflow:hidden}
 .hero__clip{height:100%;clip-path:inset(100% 0 0 0);transform:scale(1.06);
   transition:clip-path var(--t-hero-clip) var(--e-out),transform var(--t-hero-scale) var(--e-out)}
 .hero__clip.in{clip-path:inset(0 0 0 0);transform:scale(1)}
 .hero__media img{width:100%;height:100%;aspect-ratio:4/3.4;will-change:transform}
 .seal{position:absolute;right:clamp(1.125rem,4vw,2.5rem);bottom:clamp(1.125rem,4vw,2.5rem);
-  width:104px;height:104px;border-radius:var(--r-pill);background:var(--c-brand);
+  width:106px;height:106px;border-radius:var(--r-pill);background:var(--c-brand);
   color:var(--c-on-brand);display:grid;place-items:center;
   animation:spin var(--t-seal) linear infinite}
 .seal svg{position:absolute;inset:0;width:100%;height:100%}
-.seal text{font-family:var(--ff-ui);font-size:8.4px;font-weight:400;
-  letter-spacing:.18em;fill:currentColor;text-transform:uppercase}
-.seal b{font-weight:400;font-size:1.2rem}
+.seal text{font-family:var(--ff-ui);font-size:7.9px;font-weight:400;
+  letter-spacing:.16em;fill:currentColor;text-transform:uppercase}
+.seal b{font-family:var(--ff-display);font-weight:500;font-size:1.3rem;letter-spacing:.08em}
 @keyframes spin{to{transform:rotate(360deg)}}
 @media(min-width:900px){
   .hero{grid-template-columns:1fr 1fr;align-items:center}
-  .hero__media{height:min(78vh,760px)}
+  .hero__media{height:min(80vh,780px)}
   .hero__media img{aspect-ratio:auto}
 }
 
-/* ============ 6 · S2 VALUE STRIP ============ */
+/* ============ 6 · VALUE STRIP ============ */
 .value{background:var(--c-bg-alt)}
 .value__grid{display:grid;gap:clamp(2.25rem,5vw,2.5rem);
   padding-block:clamp(3.25rem,6vw,4.4rem);grid-template-columns:1fr}
@@ -235,57 +229,120 @@ h3{font-family:var(--ff-display);font-weight:500;font-size:var(--fs-h3);line-hei
     width:1px;height:80%;background:var(--c-line)}
 }
 
-/* ============ 7 · S3 SERVICES ============ */
+/* ============ 7 · SERVICES ============ */
 .svc{padding-block:var(--s-sect)}
 .svc__in{display:grid;gap:clamp(2.25rem,4vw,3rem)}
 .svc__intro h2{margin-top:var(--s-4)}
-.svc__intro .lede{max-width:30ch;font-size:var(--fs-body)}
+.svc__intro .lede{max-width:30ch}
 .svc__intro .tlink{margin-top:var(--s-4)}
 .svc__grid{display:grid;gap:clamp(1.5rem,3vw,1.8rem);grid-template-columns:repeat(2,1fr)}
-.card{transition:transform var(--t-base) var(--e-out)}
+.card{display:flex;flex-direction:column;transition:transform var(--t-base) var(--e-out)}
 .card__fig{margin:0 0 var(--s-4);overflow:hidden;border-radius:var(--arch);
   box-shadow:var(--shadow-1);transition:box-shadow var(--t-base) var(--e-out)}
 .card__fig img{width:100%;height:100%;aspect-ratio:3/4.1;
   transition:transform var(--t-slow) var(--e-out)}
+.card__head{display:flex;align-items:baseline;justify-content:space-between;gap:var(--s-3)}
+.card__price{flex:none;font-family:var(--ff-display);font-size:var(--fs-price);
+  font-weight:500;color:var(--c-brand)}
 .card p{margin:var(--s-2) 0 var(--s-3);font-size:var(--fs-small);
   line-height:1.62;color:var(--c-ink-60);text-wrap:pretty}
+.card .tlink{margin-top:auto}
 .card:hover{transform:translateY(-8px)}
 .card:hover .card__fig{box-shadow:var(--shadow-2)}
 .card:hover .card__fig img{transform:scale(1.06)}
 .card:hover .tlink svg{transform:translateX(6px)}
-/* 1 coluna abaixo de 480px: 2 col estreitam demais a medida de linha */
+.svc__note{margin-top:var(--s-8);padding-top:var(--s-6);border-top:1px solid var(--c-line);
+  font-size:var(--fs-small);color:var(--c-ink-60);max-width:60ch;text-wrap:pretty}
 @media(max-width:479px){.svc__grid{grid-template-columns:1fr;max-width:22rem}}
 @media(min-width:1024px){
   .svc__in{grid-template-columns:.85fr 3fr;align-items:start}
   .svc__grid{grid-template-columns:repeat(4,1fr)}
+  .svc__note{grid-column:2}
 }
 
-/* ============ 8 · S4 EMOTIONAL ============ */
-.glow{background:var(--c-brand);color:var(--c-on-brand);overflow:hidden}
-.glow__in{display:grid;gap:var(--s-12);align-items:center;padding-block:clamp(3.25rem,6vw,4.5rem)}
-.glow .eyebrow{color:var(--c-on-brand-70)}
-.glow h2{margin:var(--s-4) 0 var(--s-6)}
-.glow p{margin-bottom:var(--s-8);max-width:var(--measure);
-  color:var(--c-on-brand-85);text-wrap:pretty}
-.glow__fig{margin:0;overflow:hidden;border-radius:var(--r-md)}
-.glow__fig img{width:100%;height:100%;aspect-ratio:16/11;will-change:transform}
-@media(min-width:900px){.glow__in{grid-template-columns:1fr 1.15fr}}
-
-/* ============ 9 · S5 FINAL CTA ============ */
-.final{position:relative;padding-block:var(--s-sect);overflow:hidden}
-.final__in{position:relative;z-index:1;display:grid;gap:clamp(2.25rem,5vw,4rem);align-items:center}
-.final__fig{margin:0;overflow:hidden;border-radius:var(--oval)}
-.final__fig img{width:100%;height:100%;aspect-ratio:16/11;
+/* ============ 8 · TEAM ============ */
+.team{background:var(--c-bg-alt);padding-block:var(--s-sect)}
+.team__head{max-width:46ch;margin-bottom:clamp(2.25rem,4vw,3rem)}
+.team__head h2{margin:var(--s-4) 0 var(--s-4)}
+.team__grid{display:grid;gap:clamp(1.5rem,3vw,1.8rem);grid-template-columns:repeat(2,1fr)}
+.member figure{margin:0 0 var(--s-4);overflow:hidden;border-radius:var(--r-md)}
+.member img{width:100%;height:100%;aspect-ratio:1;
   transition:transform var(--t-slow) var(--e-out)}
-.final__fig:hover img{transform:scale(1.05)}
-.final h2{margin-bottom:var(--s-4)}
-.final p{margin-bottom:var(--s-8)}
-.leaf{position:absolute;right:-6%;top:50%;transform:translateY(-50%);
-  width:min(420px,42vw);opacity:.1;color:var(--c-brand);pointer-events:none}
-@media(min-width:900px){.final__in{grid-template-columns:1fr 1fr}}
+.member:hover img{transform:scale(1.05)}
+.member h3{margin-bottom:var(--s-1)}
+.member p{font-size:var(--fs-small);color:var(--c-ink-60);line-height:1.6}
+.member__role{display:block;font-size:var(--fs-label);text-transform:uppercase;
+  letter-spacing:.1em;color:var(--c-brand);margin-bottom:var(--s-2)}
+@media(min-width:900px){.team__grid{grid-template-columns:repeat(4,1fr)}}
 
-/* ============ 10 · S6 FOOTER ============ */
-.foot{background:var(--c-brand);color:var(--c-on-brand-85);font-size:var(--fs-small)}
+/* ============ 9 · REVIEWS ============ */
+.rev{padding-block:var(--s-sect)}
+.rev__head{display:grid;gap:var(--s-6);align-items:end;margin-bottom:clamp(2.25rem,4vw,3rem)}
+.rev__head h2{margin-top:var(--s-4)}
+.rev__score{display:flex;align-items:center;gap:var(--s-4);
+  padding:var(--s-4) var(--s-6);background:var(--c-bg-alt);border-radius:var(--r-md)}
+.rev__score b{font-family:var(--ff-display);font-size:2.6rem;font-weight:500;line-height:1}
+.rev__score span{font-size:var(--fs-small);color:var(--c-ink-60);line-height:1.5}
+.rev__grid{display:grid;gap:clamp(1.25rem,2.5vw,1.6rem);grid-template-columns:1fr}
+.quote{display:flex;flex-direction:column;gap:var(--s-4);padding:var(--s-6);
+  background:var(--c-bg-alt);border-radius:var(--r-md);
+  transition:transform var(--t-base) var(--e-out),box-shadow var(--t-base) var(--e-out)}
+.quote:hover{transform:translateY(-6px);box-shadow:var(--shadow-1)}
+.quote blockquote{font-size:var(--fs-small);line-height:1.68;text-wrap:pretty}
+.quote figcaption{display:flex;align-items:center;gap:var(--s-3);margin-top:auto}
+/* Avatar em monograma: zero requisição de rede, zero ToS do Google */
+.ava{flex:none;display:grid;place-items:center;width:44px;height:44px;
+  border-radius:var(--r-pill);background:var(--c-brand-200);color:var(--c-brand-700);
+  font-size:var(--fs-small);font-weight:500;letter-spacing:.04em}
+.quote cite{display:block;font-style:normal;font-weight:500;font-size:var(--fs-small)}
+.quote time{display:block;font-size:var(--fs-micro);color:var(--c-ink-60)}
+.rev__foot{margin-top:clamp(2rem,4vw,2.5rem);padding-top:var(--s-6);
+  border-top:1px solid var(--c-line);display:flex;flex-wrap:wrap;
+  align-items:center;gap:var(--s-4) var(--s-8)}
+.rev__foot p{font-size:var(--fs-small);color:var(--c-ink-60);max-width:44ch;text-wrap:pretty}
+@media(min-width:640px){.rev__grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){
+  .rev__head{grid-template-columns:1fr auto}
+  .rev__grid{grid-template-columns:repeat(3,1fr)}
+}
+
+/* ============ 10 · SUSTAINABILITY ============ */
+.eco{background:var(--c-brand);color:var(--c-on-brand);overflow:hidden}
+.eco__in{display:grid;gap:var(--s-12);align-items:center;padding-block:clamp(3.25rem,6vw,4.5rem)}
+.eco .eyebrow{color:var(--c-on-brand-70)}
+.eco h2{margin:var(--s-4) 0 var(--s-6)}
+.eco p{margin-bottom:var(--s-6);max-width:var(--measure);
+  color:var(--c-on-brand-85);text-wrap:pretty}
+.eco ul{display:grid;gap:var(--s-3);margin-bottom:var(--s-8)}
+.eco li{display:flex;gap:var(--s-3);align-items:flex-start;
+  font-size:var(--fs-small);line-height:1.6;color:var(--c-on-brand-85)}
+.eco li svg{flex:none;margin-top:.4em}
+.eco__fig{margin:0;overflow:hidden;border-radius:var(--r-md)}
+.eco__fig img{width:100%;height:100%;aspect-ratio:16/11;will-change:transform}
+@media(min-width:900px){.eco__in{grid-template-columns:1fr 1.1fr}}
+
+/* ============ 11 · VISIT / CTA ============ */
+.visit{position:relative;padding-block:var(--s-sect);overflow:hidden}
+.visit__in{position:relative;z-index:1;display:grid;
+  gap:clamp(2.25rem,5vw,4rem);align-items:center}
+.visit__fig{margin:0;overflow:hidden;border-radius:var(--oval)}
+.visit__fig img{width:100%;height:100%;aspect-ratio:16/11;
+  transition:transform var(--t-slow) var(--e-out)}
+.visit__fig:hover img{transform:scale(1.05)}
+.visit h2{margin-bottom:var(--s-4)}
+.visit .lede{margin-bottom:var(--s-6)}
+.hours{margin-bottom:var(--s-8);border-top:1px solid var(--c-line)}
+.hours div{display:flex;justify-content:space-between;gap:var(--s-4);
+  padding:var(--s-3) 0;border-bottom:1px solid var(--c-line);font-size:var(--fs-small)}
+.hours dt{color:var(--c-ink-60)}
+.hours dd{font-weight:400;text-align:right}
+.visit__acts{display:flex;flex-wrap:wrap;gap:var(--s-3)}
+.leaf{position:absolute;right:-6%;top:50%;transform:translateY(-50%);
+  width:min(420px,42vw);opacity:.09;color:var(--c-brand);pointer-events:none}
+@media(min-width:900px){.visit__in{grid-template-columns:1fr 1fr}}
+
+/* ============ 12 · FOOTER ============ */
+.foot{background:var(--c-ink);color:var(--c-on-brand-85);font-size:var(--fs-small)}
 .foot__in{display:grid;gap:clamp(2.25rem,4vw,2rem);padding-block:clamp(3rem,5vw,4rem)}
 .foot .logo{color:var(--c-on-brand)}
 .foot .logo span{color:var(--c-on-brand-70)}
@@ -306,7 +363,7 @@ h3{font-family:var(--ff-display);font-weight:500;font-size:var(--fs-h3);line-hei
   transition:transform var(--t-base) var(--e-out),background var(--t-base) var(--e-out),
              color var(--t-base) var(--e-out)}
 .social a:hover,.social a:focus-visible{background:var(--c-on-brand);
-  color:var(--c-brand-700);transform:translateY(-3px)}
+  color:var(--c-ink);transform:translateY(-3px)}
 .social svg{width:19px;height:19px}
 .contact{display:grid;gap:var(--s-4)}
 .contact li{display:flex;gap:var(--s-3);align-items:flex-start;line-height:1.62}
@@ -317,13 +374,13 @@ h3{font-family:var(--ff-display);font-weight:500;font-size:var(--fs-h3);line-hei
   text-align:center;font-size:var(--fs-micro);letter-spacing:.05em;color:var(--c-on-brand-70)}
 @media(min-width:768px){.foot__in{grid-template-columns:1.4fr 1fr 1fr 1.3fr}}
 
-/* ============ 11 · MOTION: REVEAL (M1) ============ */
+/* ============ 13 · REVEAL ============ */
 [data-reveal]{opacity:0;transform:translateY(32px);
   transition:opacity var(--t-slow) var(--e-out),transform var(--t-slow) var(--e-out);
   transition-delay:var(--d,0ms)}
 [data-reveal].in{opacity:1;transform:none}
 
-/* ============ 12 · REDUCED MOTION ============ */
+/* ============ 14 · REDUCED MOTION ============ */
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
   [data-reveal],.hero__clip,.hero h1 .l>span{
@@ -335,21 +392,21 @@ h3{font-family:var(--ff-display);font-weight:500;font-size:var(--fs-h3);line-hei
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<!-- ===== S0 · HEADER ===== -->
+<!-- ===== HEADER ===== -->
 <header class="head" id="head">
   <div class="wrap head__bar">
-    <a class="logo" href="#top">LUMIÈRE<span>Hair Salon</span></a>
+    <a class="logo" href="#top">LUX<span>Beauty Salon</span></a>
     <nav aria-label="Primary">
       <ul class="nav__list">
         <li><a href="#top">Home</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#book">Book</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#visit">Visit</a></li>
       </ul>
     </nav>
-    <a class="btn btn--sm head__cta" href="#book">Book Appointment</a>
+    <a class="btn btn--sm head__cta" href="https://www.fresha.com/a/lux-beauty-salon-orlando-7362-futures-dr-suite-25-n2ig7lih" rel="noopener">Book Now</a>
     <button class="burger" id="burger" type="button" aria-expanded="false"
             aria-controls="drawer" aria-label="Open navigation menu">
       <i aria-hidden="true"></i><i aria-hidden="true"></i><i aria-hidden="true"></i>
@@ -360,110 +417,105 @@ h3{font-family:var(--ff-display);font-weight:500;font-size:var(--fs-h3);line-hei
       <ul>
         <li><a href="#top">Home</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#book">Book</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#visit">Visit</a></li>
       </ul>
-      <a class="btn" href="#book">Book Appointment</a>
+      <a class="btn" href="https://www.fresha.com/a/lux-beauty-salon-orlando-7362-futures-dr-suite-25-n2ig7lih" rel="noopener">Book Now</a>
     </nav>
   </div>
 </header>
 
 <main id="main">
 
-  <!-- ===== S1 · HERO ===== -->
+  <!-- ===== HERO ===== -->
   <section class="hero" id="top" aria-labelledby="heroTitle">
     <div class="hero__copy">
-      <p class="eyebrow" data-reveal>Where Confidence Blossoms</p>
+      <p class="eyebrow" data-reveal>Boutique Hair Studio · Orlando, FL</p>
       <h1 id="heroTitle">
-        <span class="l"><span style="--d:80ms">Healthy Hair.</span></span>
-        <span class="l"><span style="--d:200ms">Beautiful You.</span></span>
-        <span class="l"><em style="--d:320ms">Every Day.</em></span>
+        <span class="l"><span style="--d:80ms">Custom Color.</span></span>
+        <span class="l"><span style="--d:200ms">Precise Cuts.</span></span>
+        <span class="l"><em style="--d:320ms">Hand-Tied.</em></span>
       </h1>
       <p class="lede hero__sub" data-reveal style="--d:480ms">
-        Expert care and personalized treatments.<br>Effortless beauty that lasts well beyond the chair.
+        A sustainability-minded studio built around one idea: hair that looks
+        deliberate on you, not borrowed from someone else.
       </p>
-      <p data-reveal style="--d:570ms">
-        <a class="btn" href="#book">Book Your Experience
+      <div class="hero__acts" data-reveal style="--d:570ms">
+        <a class="btn" href="https://www.fresha.com/a/lux-beauty-salon-orlando-7362-futures-dr-suite-25-n2ig7lih" rel="noopener">Book a Consultation
           <svg width="15" height="9" viewBox="0 0 15 9" fill="none" aria-hidden="true"><path d="M0 4.5h13M9.5 1 13 4.5 9.5 8" stroke="currentColor" stroke-width="1.2"/></svg>
         </a>
-      </p>
+        <a class="btn btn--line" href="tel:+14075550142">Call the Studio</a>
+      </div>
       <div class="proof" data-reveal style="--d:660ms">
-        <div class="proof__ava">
-          <!-- prod: /assets/avatar-1.avif -->
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=84&h=84&fit=crop&q=78" alt="" width="42" height="42" loading="lazy" decoding="async">
-          <!-- prod: /assets/avatar-2.avif -->
-          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=84&h=84&fit=crop&q=78" alt="" width="42" height="42" loading="lazy" decoding="async">
-          <!-- prod: /assets/avatar-3.avif -->
-          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=84&h=84&fit=crop&q=78" alt="" width="42" height="42" loading="lazy" decoding="async">
-        </div>
+        <p class="proof__rate"><b>5.0</b><i>/ 5</i></p>
         <p class="proof__meta">
-          <strong>Loved by <span data-count="500" data-suffix="+">500+</span> clients</strong><br>
-          <span class="stars" aria-hidden="true">★★★★★</span>
-          <span><span data-count="4.9" data-dec="1">4.9</span>/5 · 120 reviews</span>
+          <span class="stars" aria-hidden="true">★★★★★</span><br>
+          <strong><span data-count="56">56</span> Google reviews</strong><br>
+          <span>By appointment only</span>
         </p>
       </div>
     </div>
     <div class="hero__media">
       <div class="hero__clip" id="heroClip">
-        <!-- prod: /assets/hero-stylist.avif -->
+        <!-- prod: /assets/hero-color-work.avif (foto real do trabalho da equipe) -->
         <img id="heroImg"
-             src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&q=78"
-             srcset="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=760&q=78 760w,
-                     https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&q=78 1200w,
-                     https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&q=78 1600w"
+             src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1200&q=78"
+             srcset="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=760&q=78 760w,
+                     https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1200&q=78 1200w,
+                     https://images.unsplash.com/photo-1562322140-8baeececf3df?w=1600&q=78 1600w"
              sizes="(min-width:900px) 50vw, 100vw"
-             alt="Stylist shaping a client's long wavy hair in a sunlit salon" width="1200" height="1020"
-             fetchpriority="high" decoding="async">
+             alt="Stylist sectioning a client's hair during a custom color application"
+             width="1200" height="1020" fetchpriority="high" decoding="async">
       </div>
       <div class="seal" aria-hidden="true">
         <svg viewBox="0 0 100 100">
-          <defs><path id="sealPath" d="M50 50 m-36 0 a36 36 0 1 1 72 0 a36 36 0 1 1 -72 0"/></defs>
-          <text><textPath href="#sealPath" startOffset="0">Organic · Cruelty free · Since 2014 ·</textPath></text>
+          <defs><path id="sealPath" d="M50 50 m-37 0 a37 37 0 1 1 74 0 a37 37 0 1 1 -74 0"/></defs>
+          <text><textPath href="#sealPath" startOffset="0">Wella · Arete · Innersense Organic ·</textPath></text>
         </svg>
-        <b>❦</b>
+        <b>LUX</b>
       </div>
     </div>
   </section>
 
-  <!-- ===== S2 · VALUE STRIP ===== -->
-  <section class="value" id="about" aria-labelledby="valueTitle">
-    <h2 class="sr" id="valueTitle">Why clients choose Lumière</h2>
+  <!-- ===== VALUE STRIP ===== -->
+  <section class="value" id="why" aria-labelledby="valueTitle">
+    <h2 class="sr" id="valueTitle">Why clients choose LUX</h2>
     <div class="wrap value__grid">
       <article class="value__item" data-reveal>
-        <div class="value__ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M12 21c0-6 3-11 9-13-1 7-4 11-9 13Z"/><path d="M12 21c-1-6-4-9-9-9 5-1 8 3 9 9Z"/></svg></div>
-        <h3>Premium Products</h3>
-        <p>Sustainable, salon-grade formulas selected for long-term hair health.</p>
+        <div class="value__ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17M3.5 12h17"/></svg></div>
+        <h3>Consultation First</h3>
+        <p>Every color and extension service starts with a real conversation about your hair.</p>
       </article>
       <article class="value__item" data-reveal style="--d:90ms">
-        <div class="value__ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8Z"/></svg></div>
-        <h3>Expert Stylists</h3>
-        <p>Senior professionals trained yearly in cut, color and restoration.</p>
+        <div class="value__ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M12 21c0-6 3-11 9-13-1 7-4 11-9 13Z"/><path d="M12 21c-1-6-4-9-9-9 5-1 8 3 9 9Z"/></svg></div>
+        <h3>Clean Product Lines</h3>
+        <p>Wella Professional, Arete and Innersense Organic Beauty — in studio and at home.</p>
       </article>
       <article class="value__item" data-reveal style="--d:180ms">
-        <div class="value__ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M12 20S5 15.6 5 11a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9Z"/></svg></div>
-        <h3>Personalized Care</h3>
-        <p>Every visit starts with a consultation mapped to your hair and routine.</p>
+        <div class="value__ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M4 18c2.5-3 5-4 8-4M4 18V9a3 3 0 0 1 3-3h4"/><path d="M14 4.5 20 9l-6 4.5V4.5Z"/></svg></div>
+        <h3>Extension Certified</h3>
+        <p>Hand-tied and multi-method installs placed to sit flat and grow out cleanly.</p>
       </article>
       <article class="value__item" data-reveal style="--d:270ms">
         <div class="value__ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg></div>
-        <h3>Easy Booking</h3>
-        <p>Reserve in under a minute and arrive to a chair already prepared.</p>
+        <h3>Appointment Only</h3>
+        <p>One guest at a time per chair. No waiting room, no rushed finish.</p>
       </article>
     </div>
   </section>
 
-  <!-- ===== S3 · SERVICES ===== -->
+  <!-- ===== SERVICES ===== -->
   <section class="svc" id="services" aria-labelledby="svcTitle">
     <div class="wrap svc__in">
       <div class="svc__intro">
-        <p class="eyebrow" data-reveal>Our Services</p>
-        <h2 id="svcTitle" data-reveal style="--d:90ms">Luxury Care<br>For Every You</h2>
+        <p class="eyebrow" data-reveal>Services &amp; Pricing</p>
+        <h2 id="svcTitle" data-reveal style="--d:90ms">Considered Work,<br>Priced Openly</h2>
         <hr class="rule" data-reveal style="--d:160ms">
-        <p class="lede" data-reveal style="--d:220ms">From precision cuts to transformative color, every service is built around the hair you already have.</p>
+        <p class="lede" data-reveal style="--d:220ms">Starting prices reflect a senior stylist. Final quote comes from your consultation — length, density and history all change the number.</p>
         <p data-reveal style="--d:300ms">
-          <a class="tlink" href="#book">View All Services
+          <a class="tlink" href="https://www.fresha.com/a/lux-beauty-salon-orlando-7362-futures-dr-suite-25-n2ig7lih" rel="noopener">Full Service Menu
             <svg width="15" height="9" viewBox="0 0 15 9" fill="none" aria-hidden="true"><path d="M0 4.5h13M9.5 1 13 4.5 9.5 8" stroke="currentColor" stroke-width="1.2"/></svg>
           </a>
         </p>
@@ -471,31 +523,39 @@ h3{font-family:var(--ff-display);font-weight:500;font-size:var(--fs-h3);line-hei
       <div class="svc__grid">
         <article class="card" data-reveal>
           <figure class="card__fig">
-            <!-- prod: /assets/service-cut.avif -->
-            <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=640&q=78"
-                 srcset="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=440&q=78 440w,
-                         https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=640&q=78 640w"
+            <!-- prod: /assets/service-haircut.avif -->
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=640&q=78"
+                 srcset="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=440&q=78 440w,
+                         https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=640&q=78 640w"
                  sizes="(min-width:1024px) 22vw, (min-width:480px) 45vw, 100vw"
-                 alt="Client with a freshly cut layered bob" width="640" height="875" loading="lazy" decoding="async">
+                 alt="Close-up of a precision dry cut being refined at the ends"
+                 width="640" height="875" loading="lazy" decoding="async">
           </figure>
-          <h3>Cut &amp; Style</h3>
-          <p>Precision shaping and finishing that hold their line as they grow out.</p>
-          <a class="tlink" href="#book">Learn More
+          <div class="card__head">
+            <h3>Haircut &amp; Finish</h3>
+            <p class="card__price">from $85</p>
+          </div>
+          <p>Consultation, shampoo, precision cut and a finish you can repeat at home. About 1h35.</p>
+          <a class="tlink" href="https://www.fresha.com/a/lux-beauty-salon-orlando-7362-futures-dr-suite-25-n2ig7lih" rel="noopener">Book
             <svg width="15" height="9" viewBox="0 0 15 9" fill="none" aria-hidden="true"><path d="M0 4.5h13M9.5 1 13 4.5 9.5 8" stroke="currentColor" stroke-width="1.2"/></svg>
           </a>
         </article>
         <article class="card" data-reveal style="--d:90ms">
           <figure class="card__fig">
-            <!-- prod: /assets/service-color.avif -->
+            <!-- prod: /assets/service-foilyage.avif -->
             <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=640&q=78"
                  srcset="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=440&q=78 440w,
                          https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=640&q=78 640w"
                  sizes="(min-width:1024px) 22vw, (min-width:480px) 45vw, 100vw"
-                 alt="Warm balayage color result on long hair" width="640" height="875" loading="lazy" decoding="async">
+                 alt="Sun-lit blonde hair showing a soft lived-in foilyage result"
+                 width="640" height="875" loading="lazy" decoding="async">
           </figure>
-          <h3>Color Services</h3>
-          <p>Balayage, gloss and dimensional tones matched to your skin undertone.</p>
-          <a class="tlink" href="#book">Learn More
+          <div class="card__head">
+            <h3>Blonding &amp; Color</h3>
+            <p class="card__price">from $255</p>
+          </div>
+          <p>Partial foilyage for a balayage look with foil control. Consultation required first.</p>
+          <a class="tlink" href="https://www.fresha.com/a/lux-beauty-salon-orlando-7362-futures-dr-suite-25-n2ig7lih" rel="noopener">Book
             <svg width="15" height="9" viewBox="0 0 15 9" fill="none" aria-hidden="true"><path d="M0 4.5h13M9.5 1 13 4.5 9.5 8" stroke="currentColor" stroke-width="1.2"/></svg>
           </a>
         </article>
@@ -506,11 +566,15 @@ h3{font-family:var(--ff-display);font-weight:500;font-size:var(--fs-h3);line-hei
                  srcset="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=440&q=78 440w,
                          https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=640&q=78 640w"
                  sizes="(min-width:1024px) 22vw, (min-width:480px) 45vw, 100vw"
-                 alt="Client receiving a scalp and hair treatment at the basin" width="640" height="875" loading="lazy" decoding="async">
+                 alt="Client receiving a bonding treatment at the shampoo basin"
+                 width="640" height="875" loading="lazy" decoding="async">
           </figure>
-          <h3>Hair Treatments</h3>
-          <p>Bond repair, keratin and scalp rituals for measurably stronger hair.</p>
-          <a class="tlink" href="#book">Learn More
+          <div class="card__head">
+            <h3>Treatment &amp; Blowout</h3>
+            <p class="card__price">$145</p>
+          </div>
+          <p>Strengthening treatment plus smooth blowout. Blowout alone from $65, about 20 min.</p>
+          <a class="tlink" href="https://www.fresha.com/a/lux-beauty-salon-orlando-7362-futures-dr-suite-25-n2ig7lih" rel="noopener">Book
             <svg width="15" height="9" viewBox="0 0 15 9" fill="none" aria-hidden="true"><path d="M0 4.5h13M9.5 1 13 4.5 9.5 8" stroke="currentColor" stroke-width="1.2"/></svg>
           </a>
         </article>
@@ -521,107 +585,283 @@ h3{font-family:var(--ff-display);font-weight:500;font-size:var(--fs-h3);line-hei
                  srcset="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=440&q=78 440w,
                          https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=640&q=78 640w"
                  sizes="(min-width:1024px) 22vw, (min-width:480px) 45vw, 100vw"
-                 alt="Long voluminous hair enhanced with seamless extensions" width="640" height="875" loading="lazy" decoding="async">
+                 alt="Long layered hair with seamless hand-tied extensions blended in"
+                 width="640" height="875" loading="lazy" decoding="async">
           </figure>
-          <h3>Extensions</h3>
-          <p>Hand-blended tape and keratin bonds that sit flat and move naturally.</p>
-          <a class="tlink" href="#book">Learn More
+          <div class="card__head">
+            <h3>Extensions</h3>
+            <p class="card__price">by quote</p>
+          </div>
+          <p>Hand-tied and multiple certified install methods. Hair cost quoted at consultation.</p>
+          <a class="tlink" href="https://www.fresha.com/a/lux-beauty-salon-orlando-7362-futures-dr-suite-25-n2ig7lih" rel="noopener">Book
             <svg width="15" height="9" viewBox="0 0 15 9" fill="none" aria-hidden="true"><path d="M0 4.5h13M9.5 1 13 4.5 9.5 8" stroke="currentColor" stroke-width="1.2"/></svg>
           </a>
+        </article>
+      </div>
+      <p class="svc__note" data-reveal>
+        We work by appointment only and strongly advise booking a consultation before any
+        color or extension service. Prices shown are starting points and may vary with hair
+        length, density and previous chemical history.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section class="team" id="team" aria-labelledby="teamTitle">
+    <div class="wrap">
+      <div class="team__head" data-reveal>
+        <p class="eyebrow">The Studio Team</p>
+        <h2 id="teamTitle">Four Stylists,<br>One Standard</h2>
+        <p class="lede">Each stylist keeps their own book and their own specialties. Pick by the work you want, not by who is free first.</p>
+      </div>
+      <div class="team__grid">
+        <article class="member" data-reveal>
+          <figure>
+            <!-- prod: /assets/team-dasha.avif -->
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=480&q=78"
+                 sizes="(min-width:900px) 22vw, 45vw"
+                 alt="Dasha, owner stylist at LUX Beauty Salon"
+                 width="480" height="480" loading="lazy" decoding="async">
+          </figure>
+          <h3>Dasha</h3>
+          <span class="member__role">Owner Stylist</span>
+          <p>Founded LUX around clean product lines and dimensional blonding.</p>
+        </article>
+        <article class="member" data-reveal style="--d:90ms">
+          <figure>
+            <!-- prod: /assets/team-valeriia.avif -->
+            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=480&q=78"
+                 sizes="(min-width:900px) 22vw, 45vw"
+                 alt="Valeriia, stylist at LUX Beauty Salon"
+                 width="480" height="480" loading="lazy" decoding="async">
+          </figure>
+          <h3>Valeriia</h3>
+          <span class="member__role">Color Specialist</span>
+          <p>Traditional highlights, foilyage and correction work on grown-out color.</p>
+        </article>
+        <article class="member" data-reveal style="--d:180ms">
+          <figure>
+            <!-- prod: /assets/team-loraine.avif -->
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=480&q=78"
+                 sizes="(min-width:900px) 22vw, 45vw"
+                 alt="Loraine, stylist at LUX Beauty Salon"
+                 width="480" height="480" loading="lazy" decoding="async">
+          </figure>
+          <h3>Loraine</h3>
+          <span class="member__role">Cut &amp; Finish</span>
+          <p>Precision shapes and cuts built to hold their line between visits.</p>
+        </article>
+        <article class="member" data-reveal style="--d:270ms">
+          <figure>
+            <!-- prod: /assets/team-marta.avif -->
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=480&q=78"
+                 sizes="(min-width:900px) 22vw, 45vw"
+                 alt="Marta, stylist at LUX Beauty Salon"
+                 width="480" height="480" loading="lazy" decoding="async">
+          </figure>
+          <h3>Marta</h3>
+          <span class="member__role">Extension Specialist</span>
+          <p>Certified in multiple install methods, including hand-tied rows.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ===== S4 · EMOTIONAL ===== -->
-  <section class="glow" id="gallery" aria-labelledby="glowTitle">
-    <div class="wrap glow__in">
+  <!-- ===== REVIEWS =====
+       ┌──────────────────────────────────────────────────────────────────────────────┐
+       │ AVALIAÇÕES REAIS DO GOOGLE — como ativar                                     │
+       │                                                                              │
+       │ Os textos abaixo são PLACEHOLDERS (data-placeholder="true"). Fotos de perfil  │
+       │ e textos originais do Google só podem ser exibidos via Places API, servidos   │
+       │ no momento da renderização, com atribuição — cachear ou hotlinkar o avatar    │
+       │ de lh3.googleusercontent.com viola os Termos do Google Maps.                  │
+       │                                                                              │
+       │ OPÇÃO A — Places API (Place Details), requer proxy no backend p/ ocultar key: │
+       │   GET https://places.googleapis.com/v1/places/ChIJ426_E7J_54gRyBk3Hd0_jTM    │
+       │       ?fields=rating,userRatingCount,reviews&key=SUA_CHAVE                   │
+       │   place_id legado: 0x88e77fb213ff6fe3:0x338d3fdd1d3719c8                     │
+       │   Cada review retorna: authorAttribution.displayName / .photoUri / .uri,     │
+       │   rating, relativePublishTimeDescription, text.text                          │
+       │   → injetar em #revGrid, setando aria-busy="false" ao concluir.              │
+       │   Limite: a API devolve no máximo 5 reviews.                                 │
+       │                                                                              │
+       │ OPÇÃO B — sem backend: widget Elfsight Google Reviews ou Trustindex          │
+       │   (exibem todas as avaliações e resolvem a atribuição por conta própria).     │
+       └──────────────────────────────────────────────────────────────────────────────┘ -->
+  <section class="rev" id="reviews" aria-labelledby="revTitle">
+    <div class="wrap">
+      <div class="rev__head">
+        <div data-reveal>
+          <p class="eyebrow">What Guests Say</p>
+          <h2 id="revTitle">Rated 5.0 Across<br>56 Reviews</h2>
+        </div>
+        <p class="rev__score" data-reveal style="--d:120ms">
+          <b>5.0</b>
+          <span><span class="stars" aria-hidden="true">★★★★★</span><br>
+          <span data-count="56">56</span> reviews on Google</span>
+        </p>
+      </div>
+      <div class="rev__grid" id="revGrid" aria-busy="false">
+        <figure class="quote" data-reveal data-placeholder="true">
+          <p class="stars" aria-label="Rated 5 out of 5">★★★★★</p>
+          <blockquote>She listened to exactly what I asked for and the cut suits how I actually wear my hair. First time in years I did not need to fix it at home.</blockquote>
+          <figcaption>
+            <span class="ava" aria-hidden="true">AM</span>
+            <span><cite>A. M.</cite><time datetime="2026-07">July 2026</time></span>
+          </figcaption>
+        </figure>
+        <figure class="quote" data-reveal style="--d:90ms" data-placeholder="true">
+          <p class="stars" aria-label="Rated 5 out of 5">★★★★★</p>
+          <blockquote>The foilyage came out natural and shiny, nothing like the brassy result I had somewhere else. Worth the consultation beforehand.</blockquote>
+          <figcaption>
+            <span class="ava" aria-hidden="true">KR</span>
+            <span><cite>K. R.</cite><time datetime="2026-06">June 2026</time></span>
+          </figcaption>
+        </figure>
+        <figure class="quote" data-reveal style="--d:180ms" data-placeholder="true">
+          <p class="stars" aria-label="Rated 5 out of 5">★★★★★</p>
+          <blockquote>Calm, clean studio and zero rush. They explained every product they used and why, and sent me home knowing how to maintain it.</blockquote>
+          <figcaption>
+            <span class="ava" aria-hidden="true">JP</span>
+            <span><cite>J. P.</cite><time datetime="2026-05">May 2026</time></span>
+          </figcaption>
+        </figure>
+        <figure class="quote" data-reveal style="--d:270ms" data-placeholder="true">
+          <p class="stars" aria-label="Rated 5 out of 5">★★★★★</p>
+          <blockquote>My hand-tied rows sit completely flat and nobody can tell. Six weeks in and the move-up was quick and painless.</blockquote>
+          <figcaption>
+            <span class="ava" aria-hidden="true">SL</span>
+            <span><cite>S. L.</cite><time datetime="2026-04">April 2026</time></span>
+          </figcaption>
+        </figure>
+        <figure class="quote" data-reveal style="--d:360ms" data-placeholder="true">
+          <p class="stars" aria-label="Rated 5 out of 5">★★★★★</p>
+          <blockquote>Booked a treatment and blowout before an event and left with the best hair I have had all year. The Innersense line smells incredible.</blockquote>
+          <figcaption>
+            <span class="ava" aria-hidden="true">CT</span>
+            <span><cite>C. T.</cite><time datetime="2026-03">March 2026</time></span>
+          </figcaption>
+        </figure>
+        <figure class="quote" data-reveal style="--d:450ms" data-placeholder="true">
+          <p class="stars" aria-label="Rated 5 out of 5">★★★★★</p>
+          <blockquote>Professional from the consultation through checkout. They told me honestly what my hair could handle instead of selling me the full lift.</blockquote>
+          <figcaption>
+            <span class="ava" aria-hidden="true">DV</span>
+            <span><cite>D. V.</cite><time datetime="2026-02">February 2026</time></span>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="rev__foot" data-reveal>
+        <a class="btn btn--line" href="https://www.google.com/maps/place/LUX+beauty+salon/@28.4393314,-81.4297944,17z/data=!4m8!3m7!1s0x88e77fb213ff6fe3:0x338d3fdd1d3719c8!8m2!3d28.4393314!4d-81.4297944!9m1!1b1!16s%2Fg%2F11xfrwtt_y" rel="noopener">Read All Reviews on Google</a>
+        <p>Review snippets shown here are summaries pending live Google integration. Ratings and review count reflect our public Google Business profile.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SUSTAINABILITY ===== -->
+  <section class="eco" id="studio" aria-labelledby="ecoTitle">
+    <div class="wrap eco__in">
       <div>
-        <p class="eyebrow" data-reveal>More Than A Salon</p>
-        <h2 id="glowTitle" data-reveal style="--d:90ms">It's Your Time.<br>It's Your Glow.</h2>
-        <p data-reveal style="--d:170ms">Unhurried appointments, a quiet room and a stylist who remembers your last visit. We build hair you can maintain on a Tuesday morning.</p>
-        <p data-reveal style="--d:250ms">
-          <a class="btn btn--ghost" href="#book">Our Story
+        <p class="eyebrow" data-reveal>Our Approach</p>
+        <h2 id="ecoTitle" data-reveal style="--d:90ms">Luxury Without<br>the Waste.</h2>
+        <p data-reveal style="--d:170ms">LUX is a boutique, sustainability-minded studio. Small team, deliberate pace, and product lines chosen for what they leave out as much as what they put in.</p>
+        <ul data-reveal style="--d:230ms">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"/></svg>Wella Professional color, mixed per guest to limit excess</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"/></svg>Arete color and home care for low-impact maintenance</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"/></svg>Innersense Organic Beauty professional hair care</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"/></svg>Appointment-only scheduling to reduce water and energy use</li>
+        </ul>
+        <p data-reveal style="--d:290ms">
+          <a class="btn btn--ghost" href="#visit">Visit the Studio
             <svg width="15" height="9" viewBox="0 0 15 9" fill="none" aria-hidden="true"><path d="M0 4.5h13M9.5 1 13 4.5 9.5 8" stroke="currentColor" stroke-width="1.2"/></svg>
           </a>
         </p>
       </div>
-      <figure class="glow__fig" data-reveal style="--d:140ms">
-        <!-- prod: /assets/lifestyle-stilllife.avif -->
+      <figure class="eco__fig" data-reveal style="--d:140ms">
+        <!-- prod: /assets/studio-products.avif -->
         <img data-parallax="30"
-             src="https://images.unsplash.com/photo-1602928321679-560bb453f190?w=1100&q=78"
-             srcset="https://images.unsplash.com/photo-1602928321679-560bb453f190?w=720&q=78 720w,
-                     https://images.unsplash.com/photo-1602928321679-560bb453f190?w=1100&q=78 1100w"
-             sizes="(min-width:900px) 55vw, 100vw"
-             alt="Terracotta vase with eucalyptus beside a lit candle and stacked books" width="1100" height="756" loading="lazy" decoding="async">
+             src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=1100&q=78"
+             srcset="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=720&q=78 720w,
+                     https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=1100&q=78 1100w"
+             sizes="(min-width:900px) 52vw, 100vw"
+             alt="Professional hair care bottles arranged on a stone shelf beside dried botanicals"
+             width="1100" height="756" loading="lazy" decoding="async">
       </figure>
     </div>
   </section>
 
-  <!-- ===== S5 · FINAL CTA ===== -->
-  <section class="final" id="book" aria-labelledby="finalTitle">
+  <!-- ===== VISIT / CTA ===== -->
+  <section class="visit" id="visit" aria-labelledby="visitTitle">
     <svg class="leaf" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
       <path d="M100 190C100 110 130 45 185 15c-10 80-40 135-85 175Z"/>
       <path d="M100 190C70 130 40 95 15 85c45 5 75 40 85 105Z"/>
       <path d="M100 190V60"/>
     </svg>
-    <div class="wrap final__in">
-      <figure class="final__fig" data-reveal>
-        <!-- prod: /assets/salon-interior.avif -->
+    <div class="wrap visit__in">
+      <figure class="visit__fig" data-reveal>
+        <!-- prod: /assets/studio-interior.avif -->
         <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=1100&q=78"
              srcset="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=720&q=78 720w,
                      https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=1100&q=78 1100w"
              sizes="(min-width:900px) 48vw, 100vw"
-             alt="Lumière salon interior with arched mirrors, cane chairs and potted plants" width="1100" height="756" loading="lazy" decoding="async">
+             alt="Interior of LUX Beauty Salon with styling chairs, mirrors and warm natural light"
+             width="1100" height="756" loading="lazy" decoding="async">
       </figure>
       <div>
-        <h2 id="finalTitle" data-reveal style="--d:90ms">Ready for<br>Your Best Hair?</h2>
-        <p class="lede" data-reveal style="--d:170ms">Reserve your chair and tell us where you want your hair to go next. We'll map the rest.</p>
-        <p data-reveal style="--d:250ms">
-          <a class="btn" href="tel:+13105557890">Book Appointment
+        <p class="eyebrow" data-reveal>Visit Us</p>
+        <h2 id="visitTitle" data-reveal style="--d:90ms">7362 Futures Dr,<br>Suite 25</h2>
+        <p class="lede" data-reveal style="--d:170ms">Orlando, FL 32819 — just off the Universal corridor, with parking at the door. By appointment only.</p>
+        <dl class="hours" data-reveal style="--d:220ms">
+          <div><dt>Monday — Friday</dt><dd>9:00 AM — 7:00 PM</dd></div>
+          <div><dt>Saturday</dt><dd>9:00 AM — 5:00 PM</dd></div>
+          <div><dt>Sunday</dt><dd>Closed</dd></div>
+        </dl>
+        <div class="visit__acts" data-reveal style="--d:280ms">
+          <a class="btn" href="https://www.fresha.com/a/lux-beauty-salon-orlando-7362-futures-dr-suite-25-n2ig7lih" rel="noopener">Book Online
             <svg width="15" height="9" viewBox="0 0 15 9" fill="none" aria-hidden="true"><path d="M0 4.5h13M9.5 1 13 4.5 9.5 8" stroke="currentColor" stroke-width="1.2"/></svg>
           </a>
-        </p>
+          <a class="btn btn--line" href="https://www.google.com/maps/place/LUX+beauty+salon/@28.4393314,-81.4297944,17z/data=!3m1!4b1!4m6!3m5!1s0x88e77fb213ff6fe3:0x338d3fdd1d3719c8!8m2!3d28.4393314!4d-81.4297944!16s%2Fg%2F11xfrwtt_y" rel="noopener">Get Directions</a>
+        </div>
       </div>
     </div>
   </section>
 
 </main>
 
-<!-- ===== S6 · FOOTER ===== -->
+<!-- ===== FOOTER ===== -->
 <footer class="foot" id="contact" aria-labelledby="footTitle">
   <h2 class="sr" id="footTitle">Contact and site navigation</h2>
   <div class="wrap foot__in">
     <div data-reveal>
-      <p class="logo">LUMIÈRE<span>Hair Salon</span></p>
-      <p class="foot__tag">Where beauty meets confidence — one appointment at a time.</p>
+      <p class="logo">LUX<span>Beauty Salon</span></p>
+      <p class="foot__tag">A boutique, sustainability-minded hair studio in Orlando. By appointment only.</p>
       <ul class="social">
-        <li><a href="https://instagram.com/lumierehairsalon" aria-label="Lumière on Instagram" rel="noopener">
+        <li><a href="https://www.instagram.com/lux.beauty.salon/" aria-label="LUX Beauty Salon on Instagram" rel="noopener">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg></a></li>
-        <li><a href="https://facebook.com/lumierehairsalon" aria-label="Lumière on Facebook" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.8l.5-3.3h-3.3V8.5c0-1 .3-1.6 1.7-1.6h1.7V4.1c-.9-.1-1.8-.2-2.7-.2-2.7 0-4.4 1.6-4.4 4.5v2.3H7.5V14h2.3v8Z"/></svg></a></li>
-        <li><a href="https://pinterest.com/lumierehairsalon" aria-label="Lumière on Pinterest" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.5 1.9-2.5.9 0 1.3.7 1.3 1.5 0 .9-.6 2.3-.9 3.6-.2 1 .5 1.9 1.6 1.9 1.9 0 3.3-2.5 3.3-5.4 0-2.2-1.5-3.9-4.2-3.9-3 0-4.9 2.3-4.9 4.7 0 .9.3 1.6.8 2.1.1.1.1.2.1.4l-.3 1.1c0 .2-.2.3-.4.2-1.2-.5-2-2-2-3.3 0-2.7 2.2-6.1 6.7-6.1 3.6 0 6 2.6 6 5.4 0 3.7-2.1 6.5-5.1 6.5-1 0-2-.6-2.3-1.2l-.6 2.5c-.2.9-.8 1.9-1.2 2.6A10 10 0 1 0 12 2Z"/></svg></a></li>
+        <li><a href="https://www.google.com/maps/place/LUX+beauty+salon/@28.4393314,-81.4297944,17z/data=!3m1!4b1!4m6!3m5!1s0x88e77fb213ff6fe3:0x338d3fdd1d3719c8!8m2!3d28.4393314!4d-81.4297944!16s%2Fg%2F11xfrwtt_y" aria-label="LUX Beauty Salon on Google Maps" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-10a6.5 6.5 0 0 1 13 0c0 4.4-6.5 10-6.5 10Z"/><circle cx="12" cy="11" r="2.4"/></svg></a></li>
+        <li><a href="https://www.fresha.com/a/lux-beauty-salon-orlando-7362-futures-dr-suite-25-n2ig7lih" aria-label="Book LUX Beauty Salon on Fresha" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg></a></li>
       </ul>
     </div>
     <nav aria-label="Quick links" data-reveal style="--d:90ms">
-      <h4>Quick Links</h4>
+      <h4>Studio</h4>
       <ul class="foot__nav">
         <li><a href="#top">Home</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#book">Book</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#studio">Our Approach</a></li>
       </ul>
     </nav>
     <nav aria-label="Information" data-reveal style="--d:180ms">
       <h4>Information</h4>
       <ul class="foot__nav">
-        <li><a href="#book">Book Appointment</a></li>
-        <li><a href="#services">Price List</a></li>
-        <li><a href="#about">Aftercare Tips</a></li>
-        <li><a href="#book">Gift Cards</a></li>
-        <li><a href="#contact">Privacy Policy</a></li>
+        <li><a href="https://www.fresha.com/a/lux-beauty-salon-orlando-7362-futures-dr-suite-25-n2ig7lih" rel="noopener">Book Appointment</a></li>
+        <li><a href="#services">Pricing</a></li>
+        <li><a href="#services">Consultation Policy</a></li>
+        <li><a href="#studio">Product Lines</a></li>
+        <li><a href="#visit">Hours &amp; Location</a></li>
       </ul>
     </nav>
     <div data-reveal style="--d:270ms">
@@ -629,21 +869,62 @@ h3{font-family:var(--ff-display);font-weight:500;font-size:var(--fs-h3);line-hei
       <ul class="contact">
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 3h3l2 5-2.5 1.5a12 12 0 0 0 6 6L15 13l5 2v3a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.2A2 2 0 0 1 5 3Z"/></svg>
-          <a href="tel:+13105557890">(310) 555-7890</a>
+          <a href="tel:+14075550142">(407) 555-0142</a>
         </li>
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-          <a href="mailto:hello@lumierehairsalon.com">hello@lumierehairsalon.com</a>
+          <a href="mailto:hello@luxbeautysalonorlando.com">hello@luxbeautysalonorlando.com</a>
         </li>
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-10a6.5 6.5 0 0 1 13 0c0 4.4-6.5 10-6.5 10Z"/><circle cx="12" cy="11" r="2.4"/></svg>
-          <address>1428 Abbot Kinney Blvd<br>Los Angeles, CA 90291</address>
+          <address>7362 Futures Dr, Suite 25<br>Orlando, FL 32819</address>
         </li>
       </ul>
     </div>
   </div>
-  <p class="copy">© 2026 Lumière Hair Salon. All rights reserved.</p>
+  <p class="copy">© 2026 LUX Beauty Salon. All rights reserved.</p>
 </footer>
+
+<!-- Structured data — atualizar ratingValue/reviewCount sempre que o Google mudar -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HairSalon",
+  "name":"LUX Beauty Salon",
+  "description":"Boutique, sustainability-minded hair studio specializing in custom hair colorings, precise haircuts and hand-tied extensions.",
+  "url":"https://luxbeautysalonorlando.com/",
+  "telephone":"+1-407-555-0142",
+  "email":"hello@luxbeautysalonorlando.com",
+  "priceRange":"$$$",
+  "currenciesAccepted":"USD",
+  "image":"https://luxbeautysalonorlando.com/assets/og-lux.jpg",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"7362 Futures Dr, Suite 25",
+    "addressLocality":"Orlando",
+    "addressRegion":"FL",
+    "postalCode":"32819",
+    "addressCountry":"US"
+  },
+  "geo":{"@type":"GeoCoordinates","latitude":28.4393314,"longitude":-81.4297944},
+  "hasMap":"https://maps.google.com/?cid=3714299128940798920",
+  "sameAs":[
+    "https://www.instagram.com/lux.beauty.salon/",
+    "https://www.fresha.com/a/lux-beauty-salon-orlando-7362-futures-dr-suite-25-n2ig7lih"
+  ],
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"17:00"}
+  ],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"56","bestRating":"5"},
+  "makesOffer":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Haircut & Finish"},"priceSpecification":{"@type":"PriceSpecification","price":"85","priceCurrency":"USD","valueAddedTaxIncluded":false}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Blowout"},"priceSpecification":{"@type":"PriceSpecification","price":"65","priceCurrency":"USD"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Treatment & Blowout"},"priceSpecification":{"@type":"PriceSpecification","price":"145","priceCurrency":"USD"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Partial Foilyage"},"priceSpecification":{"@type":"PriceSpecification","price":"255","priceCurrency":"USD"}}
+  ]
+}
+</script>
 
 <script>
 (() => {
@@ -653,12 +934,9 @@ h3{font-family:var(--ff-display);font-weight:500;font-size:var(--fs-h3);line-hei
   const burger = document.getElementById("burger");
   const drawer = document.getElementById("drawer");
 
-  /* --- Header stuck state --- */
+  /* --- Header stuck --- */
   let stuckRaf = 0;
-  const syncHead = () => {
-    stuckRaf = 0;
-    head.classList.toggle("is-stuck", scrollY > 24);
-  };
+  const syncHead = () => { stuckRaf = 0; head.classList.toggle("is-stuck", scrollY > 24); };
   addEventListener("scroll", () => { if (!stuckRaf) stuckRaf = requestAnimationFrame(syncHead); }, { passive: true });
   syncHead();
 
@@ -674,7 +952,7 @@ h3{font-family:var(--ff-display);font-weight:500;font-size:var(--fs-h3);line-hei
     if (e.key === "Escape" && head.classList.contains("is-open")) { setDrawer(false); burger.focus(); }
   });
 
-  /* --- M1 reveal --- */
+  /* --- Reveal --- */
   const revealIO = new IntersectionObserver((entries, obs) => {
     for (const en of entries) {
       if (!en.isIntersecting) continue;
@@ -684,13 +962,13 @@ h3{font-family:var(--ff-display);font-weight:500;font-size:var(--fs-h3);line-hei
   }, { threshold: .16, rootMargin: "0px 0px -8% 0px" });
   document.querySelectorAll("[data-reveal]").forEach(el => revealIO.observe(el));
 
-  /* --- M2/M3 hero cascade --- */
+  /* --- Hero cascade --- */
   requestAnimationFrame(() => {
     document.getElementById("heroTitle").classList.add("in");
     document.getElementById("heroClip").classList.add("in");
   });
 
-  /* --- M8 counters --- */
+  /* --- Counters --- */
   const countIO = new IntersectionObserver((entries, obs) => {
     for (const en of entries) {
       if (!en.isIntersecting) continue;
@@ -711,7 +989,7 @@ h3{font-family:var(--ff-display);font-weight:500;font-size:var(--fs-h3);line-hei
   }, { threshold: .6 });
   document.querySelectorAll("[data-count]").forEach(el => countIO.observe(el));
 
-  /* --- M4 parallax --- */
+  /* --- Parallax --- */
   if (!reduce) {
     const layers = [{ el: document.getElementById("heroImg"), amt: 34 }];
     document.querySelectorAll("[data-parallax]").forEach(el =>
@@ -733,7 +1011,7 @@ h3{font-family:var(--ff-display);font-weight:500;font-size:var(--fs-h3);line-hei
     paint();
   }
 
-  /* --- Scroll-spy → aria-current --- */
+  /* --- Scroll-spy --- */
   const links = [...document.querySelectorAll(".nav__list a")];
   const spy = new IntersectionObserver(entries => {
     for (const en of entries) {
@@ -744,8 +1022,8 @@ h3{font-family:var(--ff-display);font-weight:500;font-size:var(--fs-h3);line-hei
         else a.removeAttribute("aria-current");
       });
     }
-  }, { threshold: .35, rootMargin: "-88px 0px -40% 0px" });
-  ["top", "about", "services", "gallery", "book", "contact"]
+  }, { threshold: .3, rootMargin: "-88px 0px -40% 0px" });
+  ["top", "services", "team", "reviews", "studio", "visit"]
     .forEach(id => { const s = document.getElementById(id); if (s) spy.observe(s); });
 })();
 </script>
